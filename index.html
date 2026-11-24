@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShieldCall: Spam Call Defense</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="mark" href="index.html">ShieldCall</a>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <p class="badge">VERSION 0.1.0</p>
+  <h1>Spam-call notes that stay on the iPhone.</h1>
+  <p class="lede">ShieldCall is a screening notebook for sales pitches. You type what the caller says, or start a built-in practice scenario. The curious-customer rules answer on the phone. Every practice session stays labeled SIMULATED.</p>
+  <p>An iPhone app cannot answer, screen, or hang up a normal cellular call. ShieldCall does not do that. A future path that answers a real call would need your carrier to forward the call to a phone number you control, and that gateway is not connected in this version.</p>
+
+  <div class="grid">
+    <section class="card">
+      <h2>On the phone today</h2>
+      <ul>
+        <li>Home counts, history, and a call detail with the transcript and evidence rows.</li>
+        <li>A conversation simulator. No server is required.</li>
+        <li>The assistant asks who the caller is, what the price is, and what paperwork they can send. It will not give a card number, agree to buy, or invent your company.</li>
+        <li>Card numbers, Social Security numbers, routing numbers, and bank-account numbers are redacted before they are stored.</li>
+        <li>CSV and JSON export of a call, from the Evidence tab, through the iOS share sheet.</li>
+        <li>A block list you can hand to the Call Directory extension. You still turn that extension on in Settings.</li>
+        <li>Face ID or device-passcode lock, optional.</li>
+      </ul>
+    </section>
+    <section class="card warn">
+      <h2>Not in this version</h2>
+      <ul>
+        <li>No automatic answering of cellular calls.</li>
+        <li>No recording of audio. The consent map is a reminder, not legal advice and not permission to record.</li>
+        <li>No live carrier gateway, SIP trunk, or speech engine.</li>
+        <li>No filing with the FTC or FCC. The optional PC backend can prepare a package marked NOT FILED. This iPhone build does not submit one.</li>
+        <li>Carrier forwarding codes in the app are examples marked unverified. Confirm them with your carrier before you dial one.</li>
+        <li>A shared script is never treated as proof that two calls are the same company.</li>
+      </ul>
+    </section>
+  </div>
+
+  <h2>The PC is optional</h2>
+  <p>Calls, transcripts, lists, and settings are stored on the iPhone. If you run the ShieldCall server on your own computer and sign in from More, the app copies records both ways when that computer is reachable. Sync does not block the phone. Nothing is sent to a ShieldCall-operated service, an ad network, or an analytics service.</p>
+  <p>The server URL is one you type. On the phone, <span class="muted">127.0.0.1</span> is the phone itself, not your PC.</p>
+
+  <h2>Call blocking</h2>
+  <p>The Call Directory extension can ask iOS to block numbers you marked on this iPhone. That is identification and blocking on the handset. It is not answering the call, and it is not a promise that the carrier dropped it. You enable the extension yourself under Settings, Phone, Call Blocking &amp; Identification.</p>
+
+  <footer>
+    <p>ShieldCall: Spam Call Defense. Support and privacy questions: <a href="mailto:alanypchu@gmail.com">alanypchu@gmail.com</a>.</p>
+    <p><a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
+  </footer>
+</body>
+</html>

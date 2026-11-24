@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · ShieldCall</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="mark" href="index.html">ShieldCall</a>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <h1>Privacy policy</h1>
+  <p class="note">Effective November 24, 2026. This describes ShieldCall version 0.1.0 for iPhone and the optional self-hosted server in the same project.</p>
+
+  <h2>Who this applies to</h2>
+  <p>ShieldCall is published by Alany Chu. Contact <a href="mailto:alanypchu@gmail.com">alanypchu@gmail.com</a>. There is no separate company account that receives your call notes.</p>
+
+  <h2>What stays on the iPhone</h2>
+  <p>The app stores what you type and what the on-device rules produce: caller numbers you enter, transcripts, extracted details, evidence notes, do-not-call lines, campaign groupings, block and allow rules, personality settings, and business-identity fields you fill in. Practice sessions are marked simulated and stay marked that way.</p>
+  <p>That store sits in a directory protected with iOS complete data protection, so the files are encrypted by the device while the phone is locked. A 256-bit key in the iOS Keychain seals extracted email addresses, phone numbers, and street addresses with AES-GCM before they are written. The login token, if you sign in to your own server, is also in the Keychain. The server address, the email you type for that login, and the Face ID toggle are in the app’s own preferences on the device.</p>
+  <p>Face ID or the device passcode, if you turn the lock on, is checked by iOS. ShieldCall does not receive your biometrics.</p>
+
+  <h2>Sensitive financial information</h2>
+  <p>The assistant is not allowed to ask for or repeat a credit-card number, bank-account number, routing number, Social Security number, or tax id. If that kind of number appears in a line you type, the app redacts it before saving the line. It does not keep the original digits in the transcript.</p>
+
+  <h2>Optional sync to a server you run</h2>
+  <p>The app works with no server. If you enter a backend URL and sign in, the phone sends and receives your records with that server when it can be reached. That server is yours. ShieldCall’s publisher does not operate it and does not receive a copy. The default address, <span class="muted">127.0.0.1</span>, is the phone itself until you change it.</p>
+  <p>The password is sent only to that server at sign-in. The app keeps the token, not the password. Records the phone already sealed stay sealed with the phone’s key. Other transcript text and the business identity you typed are readable by the server you run, because you asked the phone to copy them there.</p>
+  <p>The app allows plain HTTP so a computer on your own network can be reached without a certificate. Use a network you trust, or HTTPS, before you point the app at a machine other people can reach.</p>
+
+  <h2>No ads, analytics, or sale of data</h2>
+  <p>The iPhone app has no third-party analytics, advertising, attribution, or crash-reporting SDK. It does not use the advertising identifier. It does not sell data, and it does not share data with a data broker. The Call Directory extension reads the block list from an app group shared with ShieldCall and gives those numbers to iOS on the same phone. It does not send them to a network service.</p>
+  <p>Export is a button you press. CSV or JSON then goes wherever you send it with the iOS share sheet.</p>
+
+  <h2>Recording and consent</h2>
+  <p>This is not legal advice. Version 0.1.0 does not record audio and does not store a recording. The in-app state list is a reminder that some places expect every party to consent before a conversation is recorded. It is not a ruling that recording is legal, and it is not permission to record. A robocall menu that says “press 2 to be removed” is not treated as confirmed removal and is not treated as consent to record. Confirm the law that applies to you with a lawyer before any later version records a call.</p>
+
+  <h2>Deletion and export</h2>
+  <p>Evidence can export one call as CSV or JSON. Privacy settings can delete call data on the iPhone after you type DELETE. If a server you run is signed in and reachable, the phone also sends those deletions the next time sync succeeds. Retention settings can age transcript text and evidence text on the phone. Uninstalling the app removes its local store. The Keychain item is removed with the app under normal iOS rules. A copy on a server you run stays there until that server’s own delete path runs.</p>
+
+  <h2>Children</h2>
+  <p>ShieldCall is not directed at children under 13, and it does not knowingly collect their personal information.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the effective date at the top of this page will change. The App Store listing will point at this page.</p>
+
+  <footer>
+    <p>Questions: <a href="mailto:alanypchu@gmail.com">alanypchu@gmail.com</a></p>
+    <p><a href="index.html">Product</a> · <a href="support.html">Support</a></p>
+  </footer>
+</body>
+</html>
